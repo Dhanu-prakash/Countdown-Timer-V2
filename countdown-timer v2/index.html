@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Count-Down-Timer</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+    <audio id="bgMusic" loop>
+        <source src="1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="timesUpMusic" loop>
+        <source src="2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</head>
+<body>
+    <div class = "container">
+    <h1 id="count">:3 Input ur time and enjoy :3</h1>
+        <div class = "inputcontainer">
+        <input type="text" placeholder="Days " class="usercount" id="d1">
+        <input type="text" placeholder="Hours " class="usercount" id="d2">
+        <input type="text" placeholder="Minutes " class="usercount" id="d3">
+        <input type="text" placeholder="Seconds " class="usercount" id="d4">
+        </div>
+    <button class="buttonuser" onclick="getInput()">Submit</button>
+        <div class = "timebox">
+            <div class = "timer">
+                <h2 id = "days">00</h2>
+                <p>Days</p>
+            </div>
+            <div class = "timer">
+                <h2 id = "hours">00</h2>
+                <p>Hours</p>
+            </div>
+            <div class = "timer">
+                <h2 id = "minutes">00</h2>
+                <p>Minute</p>
+            </div>
+            <div class = "timer">
+                <h2 id = "seconds">00</h2>
+                <p>Seconds</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
